@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Enter the new Message</h1>
+    <form action="/chats/<%= id %>?_method=PUT" method="post">
+        <label for="message">Message</label>
+        <input type="text" placeholder="Enter new message" name="msg">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
